@@ -289,7 +289,7 @@
   
   <footer class="footer">
     <div class="wrapper footer__wrap">
-      <div class="footer__block">
+      <div class="footer__block footer__block--logo">
         <div class="logo">
           <img src="img/logo.png" alt="Logo" width="155" height="131">
         </div>
@@ -314,7 +314,15 @@
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
-    
+    <p class="modal__title">Заказать звонок</p>
+    <form action="#" class="modal__form">
+      <input type="text" class="modal__input" placeholder="Имя">
+      <input type="tel" class="modal__input" placeholder="Телефон">
+      <input type="checkbox" id="form-check" class="checkbox" required>
+      <label for="form-check" class="checkbox__label">Я не робот</label>
+      <button type="submit" class="btn modal__btn">Заказать</button>
+      <p class="modal__comment">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a></p>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
