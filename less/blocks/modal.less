@@ -1,0 +1,88 @@
+.modal {
+  width: 460px;
+  max-width: 100%;
+  padding: 55px 70px;
+  border-radius: 5px;
+}
+
+.modal__input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #062d4b;
+  
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.modal__btn {
+  margin: 30px auto;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox__label {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  padding-left: 35px;
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid #062d4b;
+  }
+  
+  &::after {
+    display: none;
+    content: "\2714";
+    position: absolute;
+    top: 0;
+    left: 2px;
+    color: #062d4b;
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+.checkbox:checked + .checkbox__label::after {
+  display: block;
+}
+
+.modal__comment {
+  font-size: 14px;
+  text-align: center;
+  
+  a {
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.modal__title {
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+}

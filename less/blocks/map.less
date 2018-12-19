@@ -20,6 +20,7 @@
   left: ~"calc(50% - 590px)";
   width: 655px;
   padding: 30px 15px;
+  padding-bottom: 25px;
   text-align: left;
   font-size: 24px;
   line-height: 2;
@@ -28,15 +29,17 @@
   
   .logo {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
   }
 }
 
 .map__call {
   position: absolute;
   right: 40px;
-  bottom: 40px;
+  bottom: 45px;
   width: 320px;
+  font-size: 18px;
+  line-height: 1;
 }
 
 address,
@@ -60,6 +63,8 @@ address {
   &::before {
     width: 15px;
     height: 19px;
+    left: 5px;
+    top: 12px;
     background-image: url(../img/icon-pin.png);
   }
 }
@@ -68,6 +73,7 @@ address {
   &::before {
     width: 18px;
     height: 18px;
+    top: 12px;
     background-image: url(../img/icon-phone.png);
   }
 }
@@ -76,6 +82,11 @@ address {
   &::before {
     width: 22px;
     height: 22px;
-    background-image: url(../../img/icon-mail.png);
+    background-image: url(../img/icon-mail.png);
+  }
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
   }
 }
