@@ -1,0 +1,38 @@
+.gallery__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  width: 25%;
+  height: 340px;
+  border: 1px solid #80bcc4;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: none;
+    .transition();
+  }
+  
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  &:hover,
+  &:active {
+    img {
+      transform: scale(1.05);
+      .transition();
+    }
+  }
+}
