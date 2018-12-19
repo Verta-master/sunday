@@ -7,6 +7,7 @@
   <title>Гостевой дом-отель Sun Day</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/slider-pro.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -66,7 +67,90 @@
     
     <section class="number wrapper">
       <p class="title">номерной фонд</p>
-      
+      <div class="slider-pro number__slider" id="slider">
+        <div class="sp-slides">
+          <div class="sp-slide">
+            <div class="sp-image">
+              <div class="number__wrap">
+                <div class="number__info">
+                  <p class="number__title">Номера отеля</p>
+                  <p>Для любителей открытого пространства и кулинарных экспериментов есть Studio. Это большая комната, объединенная с кухней, без перегородок.</p>
+                  <strong>от 2 000 руб - до 5 000 руб</strong>
+                  <span>двуспальная кровать, шкаф, санузел, сейф, мини холодильник, телевизор</span>
+                </div>
+                <figure class="number__img">
+                  <img src="img/img-1.jpg" alt="Номера отеля">
+                </figure>
+              </div>
+            </div>
+            <img class="sp-thumbnail" src="img/img-1.jpg">
+          </div>
+          <div class="sp-slide">
+            <div class="sp-image">
+              <div class="number__wrap">
+                <div class="number__info">
+                  <p class="number__title">Номера отеля</p>
+                  <p>Для любителей открытого пространства и кулинарных экспериментов есть Studio. Это большая комната, объединенная с кухней, без перегородок.</p>
+                  <strong>от 2 000 руб - до 5 000 руб</strong>
+                  <span>двуспальная кровать, шкаф, санузел, сейф, мини холодильник, телевизор</span>
+                </div>
+                <figure class="number__img">
+                  <img src="img/img-2.jpg" alt="Номера отеля">
+                </figure>
+              </div>
+            </div>
+            <img class="sp-thumbnail" src="img/img-2.jpg">
+          </div>
+          <div class="sp-slide">
+            <div class="sp-image">
+              <div class="number__wrap">
+                <div class="number__info">
+                  <p class="number__title">Номера отеля</p>
+                  <p>Для любителей открытого пространства и кулинарных экспериментов есть Studio. Это большая комната, объединенная с кухней, без перегородок.</p>
+                  <strong>от 2 000 руб - до 5 000 руб</strong>
+                  <span>двуспальная кровать, шкаф, санузел, сейф, мини холодильник, телевизор</span>
+                </div>
+                <figure class="number__img">
+                  <img src="img/img-3.jpg" alt="Номера отеля">
+                </figure>
+              </div>
+            </div>
+            <img class="sp-thumbnail" src="img/img-3.jpg">
+          </div>
+          <div class="sp-slide">
+            <div class="sp-image">
+              <div class="number__wrap">
+                <div class="number__info">
+                  <p class="number__title">Номера отеля</p>
+                  <p>Для любителей открытого пространства и кулинарных экспериментов есть Studio. Это большая комната, объединенная с кухней, без перегородок.</p>
+                  <strong>от 2 000 руб - до 5 000 руб</strong>
+                  <span>двуспальная кровать, шкаф, санузел, сейф, мини холодильник, телевизор</span>
+                </div>
+                <figure class="number__img">
+                  <img src="img/img-4.jpg" alt="Номера отеля">
+                </figure>
+              </div>
+            </div>
+            <img class="sp-thumbnail" src="img/img-4.jpg">
+          </div>
+          <div class="sp-slide">
+            <div class="sp-image">
+              <div class="number__wrap">
+                <div class="number__info">
+                  <p class="number__title">Номера отеля</p>
+                  <p>Для любителей открытого пространства и кулинарных экспериментов есть Studio. Это большая комната, объединенная с кухней, без перегородок.</p>
+                  <strong>от 2 000 руб - до 5 000 руб</strong>
+                  <span>двуспальная кровать, шкаф, санузел, сейф, мини холодильник, телевизор</span>
+                </div>
+                <figure class="number__img">
+                  <img src="img/img-5.jpg" alt="Номера отеля">
+                </figure>
+              </div>
+            </div>
+            <img class="sp-thumbnail" src="img/img-5.jpg">
+          </div>
+        </div>
+      </div>
     </section>
     
     <section class="about">
@@ -234,6 +318,7 @@
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.sliderPro.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
@@ -249,6 +334,28 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
       spaceBetween: 20,
+    });
+    
+    $( '#slider' ).sliderPro({
+      width: '100%', 
+      height: 430,
+      orientation: 'horizontal',
+      thumbnailsPosition: 'bottom',
+      autoplay: false,
+      fullScreen: true,
+      fadeFullScreen: false,
+      buttons: false,
+      thumbnailWidth: 280,
+      thumbnailHeight: 175,
+      thumbnailArrows: true,
+      fadeThumbnailArrows: false,
+      imageScaleMode: 'contain',
+    });
+    $('.sp-slide').click(function() {
+      $('.sp-next-arrow').trigger('click');
+    });
+    $('.sp-slide').click(function() {
+      $('.sp-full-screen-button').trigger('click');
     });
   </script>
 </body>
