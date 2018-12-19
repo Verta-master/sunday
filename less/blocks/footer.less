@@ -1,0 +1,45 @@
+.footer {
+  padding-top: 15px;
+  padding-bottom: 100px;
+  color: #fff;
+  line-height: 48px;
+  text-align: left;
+  background-color: #050623;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__block {
+  padding-top: 35px;
+  
+  a {
+    display: block;
+    
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+  
+  address {
+    &::before {
+      background-image: url(../img/icon-pin-white.png);
+    }
+  }
+
+  .phone {
+    &::before {
+      background-image: url(../img/icon-phone-white.png);
+    }
+  }
+
+  .mail {
+    &::before {
+      background-image: url(../../img/icon-mail-white.png);
+    }
+  }
+}

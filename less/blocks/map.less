@@ -1,0 +1,81 @@
+.map {
+  position: relative;
+  min-height: 600px;
+  background-image: url(../../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  iframe {
+    display: block;
+    width: 100%;
+    height: 600px;
+    border: 0;
+  }
+}
+
+.map__block {
+  position: absolute;
+  top: 100px;
+  left: ~"calc(50% - 590px)";
+  width: 655px;
+  padding: 30px 15px;
+  text-align: left;
+  font-size: 24px;
+  line-height: 2;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 9px 1px rgba(0, 0, 0, 0.3);
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+.map__call {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  width: 320px;
+}
+
+address,
+.phone,
+.mail {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+address {
+  &::before {
+    width: 15px;
+    height: 19px;
+    background-image: url(../img/icon-pin.png);
+  }
+}
+
+.phone {
+  &::before {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/icon-phone.png);
+  }
+}
+
+.mail {
+  &::before {
+    width: 22px;
+    height: 22px;
+    background-image: url(../../img/icon-mail.png);
+  }
+}
