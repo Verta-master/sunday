@@ -570,6 +570,9 @@ address {
   opacity: 0.3;
   width: 100%;
   height: auto;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .promo__slide {
   width: 100%;
