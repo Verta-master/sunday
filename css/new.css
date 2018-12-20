@@ -1,0 +1,48 @@
+.header__phone,
+.header__block,
+.logo img {
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.header {
+  position: fixed;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.header--scroll {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.header--scroll .header__wrap .logo {
+  padding-top: 5px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.header--scroll .header__wrap .logo img {
+  width: 90px;
+  height: auto;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.header--scroll .header__block {
+  padding-top: 5px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.header--scroll .header__phone {
+  font-size: 24px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.header--scroll .header__call {
+  width: 200px;
+  height: 40px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+@media (max-width: 766px) {
+  .header {
+    position: absolute;
+  }
+}
