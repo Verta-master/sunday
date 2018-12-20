@@ -17,7 +17,7 @@
         <img src="img/logo.png" alt="Logo" width="155" height="131">
       </div>
       <nav class="menu">
-        <button type="button" class="menu__btn"></button>
+        <button type="button" class="menu__btn">Меню</button>
         <ul class="menu__list">
           <li class="menu__item"><a href="#">Об отеле</a></li>
           <li class="menu__item"><a href="#">Номера и цены</a></li>
@@ -326,6 +326,7 @@
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/jquery.sliderPro.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
@@ -358,6 +359,29 @@
       thumbnailArrows: true,
       fadeThumbnailArrows: false,
       imageScaleMode: 'contain',
+      breakpoints: {
+        1220: {
+          thumbnailWidth: 231,
+          thumbnailHeight: 160
+        },
+        1022: {
+          height: 350,
+          thumbnailWidth: 167,
+          thumbnailHeight: 110
+        },
+        766: {
+          width: 460,
+          height: 560,
+          thumbnailWidth: 140,
+          thumbnailHeight: 100
+        },
+        480: {
+          width: 280,
+          height: 560,
+          thumbnailWidth: 130,
+          thumbnailHeight: 100
+        }
+      },
     });
     $('.sp-slide').click(function() {
       $('.sp-next-arrow').trigger('click');
