@@ -1,0 +1,45 @@
+.header__phone,
+.header__block,
+.logo img {
+  .transition();
+}
+
+.header {
+  position: fixed;
+  .transition();
+  
+  &--scroll {
+    background-color: rgba(0,0,0,0.5);
+    .transition();
+    
+    .header__wrap .logo {
+      padding-top: 5px;
+      .transition();
+      
+      img {
+        width: 90px;
+        height: auto;
+        .transition();
+      }
+    }
+    .header__block {
+      padding-top: 5px;
+      .transition();
+    }
+    .header__phone {
+      font-size: 24px;
+      .transition();
+    }
+    .header__call {
+      width: 200px;
+      height: 40px;
+      .transition();
+    }
+  }
+}
+
+@media (max-width: 766px) {
+  .header {
+    position: absolute;
+  }
+}
